@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    .container { 
+        position: relative;
+    }
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0px;
+        word-wrap: break-word;
+        background-color: #3b413f;
+        background-clip: border-box;
+        border:10px #000;
+    
+        
+    }
+    .card-img-top {
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+    }
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10%;
+    }
+
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .topnav a.active {
+    background-color: #3b413f;
+    color: white;
+    }
+
+
+    .header {
+    text-align: center;
+    padding: 32px;
+    }
+
+    .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    padding-top: 20px;
+    }
+
+  /* SEARCH BAR HERE */
+    
+    .searchBox {
+        position: absolute;
+        transform:  translate(-50%,15%);
+        left: 92%;
+        background: #2f3640;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+
+    }
+
+    .searchBox:hover > .searchInput {
+        width: 190px;
+        padding: 0 6px;
+    }
+
+    .searchBox:hover > .searchButton {
+    background: white;
+    color : #2f3640;
+    bottom: 150%;
+
+    }
+
+    .searchButton {
+        color: white;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #2f3640;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        border: none;
+        position: relative;
+        bottom: 50%;
+    }
+
+    .searchInput {
+        border:none;
+        background: none;
+        outline:none;
+        float:left;
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 20px;
+        width: 0px;
+
+    }
+
+    @media screen and (max-width: 620px) {
+        .searchBox:hover > .searchInput {
+            width: 150px;
+            padding: 0 6px;
+        }
+
+    }
+
+    /* END OF SEARCH BAR */
+    /* Create four equal columns that sits next to each other */
+    .column-manga {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 100%;
+        padding: 0 4px;
+        border: #000;
+        }
+    .column-manga img {
+        margin-top: 8px;
+        margin-right: 10px;
+        vertical-align: middle;
+        transition: 0.5s;
+        float: left;
+    }    
+    .column-manga img:hover {
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5),
+                        0 0 30px rgba(255, 255, 255, .4), 
+                        0 0 40px rgba(255, 255, 255, .3),
+                        0 0 50px rgba(255, 255, 255, .2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388; 
+        transform: scale(1.1);
+    }
+    
+    .column-manga img:focus {
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+        }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+    .column-manga {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column-manga {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    }
+    li a:visited{
+        text-decoration: none;
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    li a:hover{
+        color: #427388;
+        text-decoration: none;
+    }
+    ul li {
+       padding: 3px;
+    }
+    h1{
+        color: white;
+        font-size: x-large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    h1:hover{
+        color: #427388;
+        text-decoration: none;
+    }
+    p{
+        font-size: 24px;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-left: 10px;
+    }
+    .side{
+        border-color: white;
+    }
+    table td {
+        color: white;
+        text-decoration: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 10px;
+    }

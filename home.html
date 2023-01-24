@@ -2,16 +2,22 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css\main.css">
+    <script src="js\main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
 <body>
+    <span>
+      <a onclick="topFunction()" title="Go to Top" id="myBtn">
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </span>
   <div class="container">
-
     <div class="topnav">
       <a class="active" href="#home">Home</a>
-      <a href="#">Manga</a>
+      <a href="manga.html">Manga</a>
       <a href="#">Donate</a>
       <a href="#">Contact</a>
       <a href="#">About</a>
@@ -25,17 +31,15 @@
         </button>
       </div>
     </div>
-
       <div class="row"> 
         <div class="column">
-          <img src="picture/3.jpg" style="width:100%">
-          <img src="picture/26.jpg" style="width:100%">
+          <img src="picture/3.jpg" style="width:100%" id="myImg"> 
+          <img src="picture/26.jpg" style="width:100%" >
           <img src="picture/9.jpg" style="width:100%">
           <img src="picture/25.jpg" style="width:100%">
           <img src="picture/21.jpg" style="width:100%">
           <img src="picture/7.jpg" style="width:100%">
           <img src="picture/15.jpg" style="width:100%">
-
         </div>
         <div class="column">
           <img src="picture/8.jpg" style="width:100%">
@@ -53,7 +57,7 @@
           <img src="picture/18.jpg" style="width:100%">
           <img src="picture/19.jpg" style="width:100%">
           <img src="picture/20.jpg" style="width:100%">
-        </div>
+        </div>  
         <div class="column">
           <img src="picture/1.jpg" style="width:100%">
           <img src="picture/22.jpg" style="width:100%">
@@ -67,8 +71,8 @@
         <div class="button-container">
           <span class="mask">Load More</span>
           <button type="button" name="Hover">Load More</button>
-        </div>
-      </div>
-    </div>
+        </div>    
+      </div>          
+
 </body>
 </html>
