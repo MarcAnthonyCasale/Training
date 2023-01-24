@@ -224,3 +224,36 @@ body {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         padding: 10px;
     }
+    .button-container {
+        position: flex;
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: visible;
+        transition: 0.5s;
+    }
+    .button-container span {
+        align-items: center;
+        position: relative;
+        padding: 11px;
+        border-radius: 75%;
+        margin-top: 10px;
+    }
+    .button-container span a:hover{
+        color: #427388;
+        background-color: #000;
+        box-shadow: 0 0 2px black,
+        0 0 4px black,
+        0 0 6px black,
+        0 0 8px black,
+        0 0 10px black,
+        0 0 12px black
+        ;
+    }
+    .fora{
+        background-color: #000;
+        background-blend-mode: darken;
+        z-index: 1;
+    }
